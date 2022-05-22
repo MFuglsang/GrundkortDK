@@ -1,0 +1,23 @@
+[@sd <= 25k] {
+    label-follow-line: true;
+    stroke-opacity: 0;
+    label-max-displacement: 200;
+    label-repeat: 400;
+    /* needed because some labels are rendered outside of road*/
+    label-max-angle-delta: 30;
+    label-priority: 2300;
+    label-group: true;
+    font-fill: blue;
+    font-family: 'Arial';
+		label: [NAVN];
+        font-size:
+          categorize(@sd, 
+            11, 1500,
+            9, 6k,
+            8, 25k,
+            6, 50k,
+            6);
+        halo-radius: 1;
+        halo-color: white;
+
+    }

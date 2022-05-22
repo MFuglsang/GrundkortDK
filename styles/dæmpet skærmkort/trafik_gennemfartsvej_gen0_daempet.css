@@ -1,0 +1,26 @@
+@mode 'Flat';
+
+* {
+  
+
+	[@sd < 8M] [@sd > 500k]  {
+      stroke: #d9d8d9, #d9d8d9;
+      z-index: 0, 1;
+      stroke-width:
+        [categorize(@sd,
+          1.4, 800k,
+          0.8, 1.5M,
+          0.4, 3M,
+          0.2, 6M,
+          0.1) * 1.8],
+        categorize(@sd,
+          1.4, 800k,
+          0.8, 1.5M,
+          0.4, 3M,
+          0.2, 6M,
+          0.1);
+      stroke-linecap: butt, round;
+  
+
+  };
+  }

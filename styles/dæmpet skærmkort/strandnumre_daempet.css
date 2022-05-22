@@ -1,0 +1,31 @@
+/* @title orange point */
+* {
+  
+    [@sd > 10k] [@sd < 50k]{
+  
+    mark: symbol(triangle);
+    mark-size: 3px;
+    :mark {
+        fill: red;
+  };
+  };
+  
+  [@sd < 10k] {
+  
+  font-family: 'Arial';
+  font-fill: white;
+  label-anchor: 0.5 0.5;
+  halo-radius: 1.5;
+  halo-opacity: 0.7;
+  halo-color: red;
+  -gt-label-padding: 3;
+  -gt-label-auto-wrap: 80;
+  label: [StrandNr];
+  font-size: 9;
+        mark: symbol(triangle);
+    mark-size: 4px;
+    :mark {
+        fill: red;
+  };
+  }
+}

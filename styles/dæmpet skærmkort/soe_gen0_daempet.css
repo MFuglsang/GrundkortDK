@@ -1,0 +1,6 @@
+@mode 'Flat';
+
+[@sd > 500k] {
+  fill: #aad3df;
+  stroke: #aad3df;
+}

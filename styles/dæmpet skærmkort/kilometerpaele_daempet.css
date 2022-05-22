@@ -1,0 +1,31 @@
+/* @title orange point */
+* {
+  
+    [@sd > 10k] [@sd < 50k]{
+  
+    mark: symbol(circle);
+    mark-size: 2px;
+    :mark {
+        fill: black;
+  };
+  };
+  
+  [@sd < 10k] {
+  
+  font-family: 'Arial';
+  font-fill: white;
+  label-anchor: 0.5 0.5;
+  halo-radius: 1.5;
+  halo-opacity: 0.7;
+  halo-color: black;
+  -gt-label-padding: 3;
+  -gt-label-auto-wrap: 80;
+  label: [km]' / '[m];
+  font-size: 10;
+        mark: symbol(circle);
+    mark-size: 2px;
+    :mark {
+        fill: black;
+  };
+  }
+}

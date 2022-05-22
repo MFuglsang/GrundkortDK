@@ -1,0 +1,21 @@
+[@sd < 2M] {
+      stroke: #787878;
+      stroke-width: categorize(@sd,  0.4, 200k, 0.15 ,3M, 0.1);
+      stroke-linejoin: round;
+      [@sd < 200k] {
+        z-index: 1, 2;
+        stroke: #707070;
+        stroke-linejoin: round;
+        stroke-width:
+          categorize(@sd, 
+            2, 15k,
+            1.8, 35k,
+            1.4),
+          categorize(@sd, 
+            0.6, 15k,
+            0.4, 35k,
+            0.2);
+        stroke-linecap: butt, round;
+        stroke-dasharray: 5 2;
+      }
+    }

@@ -1,0 +1,23 @@
+[@sd <= 50k] {
+
+    stroke-opacity: 0;
+
+    label-group: true;
+    label-z-index: 1000;
+  	label-priority: 1000; 
+  	label-anchor: 0.5 0.5;
+  	label-auto-wrap: 15;
+    font-fill: grey;
+    font-family: 'Arial';
+		label: [NAVN];
+        font-size:
+          categorize(@sd, 
+            13, 1500,
+            12, 6k,
+            10, 25k,
+            8, 50k,
+            9);
+        halo-radius: 1;
+        halo-color: white;
+
+    }

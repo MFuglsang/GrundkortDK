@@ -1,0 +1,49 @@
+[@sd <= 300k][@sd > 50k] {
+    label-follow-line: true;
+    stroke-opacity: 0;
+    label-max-displacement: 200;
+    label-repeat: 200;
+    /* needed because some labels are rendered outside of road*/
+    label-max-angle-delta: 90;
+    label-priority: 500;
+    label-group: true;
+    	label-min-group-distance: 10;
+    font-fill: #000000;
+    font-family: 'Arial';
+		label: [vejnavn];
+        font-size:
+          categorize(@sd, 
+            11, 50,
+            10, 100k,
+            8, 200k,
+            6, 300k,
+            4);
+        halo-radius: 1;
+        halo-color: white;
+
+    }
+
+[@sd <= 50k] {
+    label-follow-line: true;
+    stroke-opacity: 0;
+    label-max-displacement: 200;
+    label-repeat: 200;
+    /* needed because some labels are rendered outside of road*/
+    label-max-angle-delta: 90;
+    label-priority: 500;
+    label-group: true;
+    label-min-group-distance: 100;
+    font-fill: #000000;
+    font-family: 'Arial';
+		label: [vejnavn];
+        font-size:
+          categorize(@sd, 
+            11, 1500,
+            10, 6k,
+            9, 25k,
+            8, 50k,
+            7);
+        halo-radius: 1;
+        halo-color: white;
+
+    }
