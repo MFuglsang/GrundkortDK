@@ -1,0 +1,13 @@
+[@sd < 100k] {
+    stroke: #bfbfbf;
+    stroke-width: 0.4;
+    stroke-linejoin: round;
+
+  stroke-linecap: butt, round;
+  z-index: 0, 1;
+  stroke: #f2c89b, #FFFFFF;
+  stroke-width: 
+    categorize(@sd, 20, 1.5k, 15, 3k, 14, 6k, 8, 12.5k, 6, 25k, 2, 100k, 1.5),
+    [categorize(@sd, 20 - 2, 1.5k, 15 - 2, 3k, 14 - 2, 6k, 8 - 1.5, 12.5k, 6 - 1.5, 25k, 2 - 1, 100k, 1.5 - 2)];
+
+  }

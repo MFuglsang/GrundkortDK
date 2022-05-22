@@ -1,0 +1,76 @@
+/* @title orange point */
+* {
+  
+    [@sd > 100k] [@sd < 200k]{
+  
+    shield: symbol(square);
+    
+    :shield {
+        fill: green;
+        stroke: white;
+    	stroke-width: 1px;
+      	size: 16;
+       };
+    font-family: 'Arial';
+    font-fill: white;
+  	label-anchor: 0.5 0.7;
+    halo-radius: 1.5;
+    halo-opacity: 0.7;
+    halo-color: black;
+    -gt-label-padding: 3;
+    -gt-label-auto-wrap: 80;
+    label: [INTERCHA_2];
+      
+ 
+  };
+
+
+  [@sd > 20k] [@sd < 100k]{
+  z-index: 1;
+  font-family: 'Arial';
+  font-fill: black;
+  label-anchor: 0.5 0.7;
+  halo-radius: 1.5;
+  halo-opacity: 0.7;
+  halo-color: white;
+  -gt-label-padding: 3;
+  -gt-label-auto-wrap: 80;
+  label-z-index: 9999;
+  label-priority: 9999;  
+  label: [INTERCHA_2];
+    shield: symbol(square);
+    
+    :shield {
+        fill: green;
+        stroke: white;
+    	stroke-width: 1px;
+      	size: 18;
+       };
+  };
+  
+  
+    [@sd < 20k]{
+  z-index: 1;
+  font-family: 'Arial';
+  font-fill: black;
+  label-anchor: 0.5 0.7;
+  halo-radius: 1.5;
+  halo-opacity: 0.7;
+  halo-color: white;
+  -gt-label-padding: 3;
+  -gt-label-auto-wrap: 80;
+  label-z-index: 9999;
+  label-priority: 9999;  
+  label: [INTERCHA_2];
+    shield: symbol(square);
+    
+    :shield {
+        fill: green;
+        stroke: white;
+    	stroke-width: 1px;
+      	size: 20;
+       };
+  };
+  
+  
+}

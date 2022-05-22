@@ -1,0 +1,29 @@
+@mode 'Flat';
+
+* {
+  font-family: 'Arial';
+  font-fill: black;
+  label-anchor: 0.5 0.5;
+  halo-radius: 0;
+  halo-opacity: 0.7;
+  halo-color: white;
+  -gt-label-padding: 3;
+  -gt-label-auto-wrap: 80;
+  label-priority: 2700;
+
+
+  [@scale > 50k][@scale < 600k] {
+    label: [NAVN];
+    font-size: categorize(@sd,
+      18, 10k,
+      16, 25k,
+      15, 50k,
+      14, 100k,
+      12, 200k,
+      12, 500k,
+      12);
+    label-priority: 2730;
+
+  };
+
+}

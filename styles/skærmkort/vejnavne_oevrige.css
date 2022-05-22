@@ -1,0 +1,23 @@
+[@sd < 25k] {
+    label-follow-line: true;
+    stroke-opacity: 0;
+    label-max-displacement: 200;
+    label-repeat: 200;
+    /* needed because some labels are rendered outside of road*/
+    label-max-angle-delta: 45;
+    label-priority: 2300;
+    label-group: true;
+    font-fill: #000000;
+    font-family: 'Arial';
+		label: [vejnavn];
+        font-size:
+          categorize(@sd, 
+            15, 1500,
+            12, 6k,
+            8, 25k,
+            8, 50k,
+            6);
+        halo-radius: 1;
+        halo-color: white;
+
+    }

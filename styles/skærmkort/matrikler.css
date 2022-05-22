@@ -1,0 +1,5 @@
+@mode 'Flat';  
+[@sd < 5k] {
+      stroke: #000000;
+      stroke-width: 0.2;
+  }

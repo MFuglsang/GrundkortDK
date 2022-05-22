@@ -1,0 +1,24 @@
+@mode 'Flat';
+
+* {
+  
+	[@sd < 600k] [@sd > 200k] {
+    stroke: #f7f5e2;
+    stroke-width: 0.4;
+    stroke-linejoin: round;
+    stroke-linecap: butt, round;
+    [@sd < 200k] {
+      z-index: 0, 1;
+      stroke-opacity: 0.4, 1;
+      stroke: #e9dbbc, #f7f5e2;
+      [@sd < 100k] {
+        stroke-opacity: 1, 1;
+        stroke: #e9dbbc, #f7f5e2;
+      };
+      stroke-width: 
+        categorize(@sd, 27, 1.5k, 21, 3k, 18, 6k, 10, 12.5k, 9, 25k, 5, 100k, 3.5),
+        [categorize(@sd, 27 - 2, 1.5k, 21 - 2, 3k, 18 - 2, 6k, 10 - 1.5, 12.5k, 9 - 1.5, 25k, 5 - 1, 100k, 3.5 - 0.8)];
+
+    };
+  };
+  }

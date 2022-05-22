@@ -1,0 +1,6 @@
+@mode 'Flat';
+
+[@sd < 500k] [@sd > 50k]{
+  fill: #aadcb6;
+  stroke: #cee3c5;
+}

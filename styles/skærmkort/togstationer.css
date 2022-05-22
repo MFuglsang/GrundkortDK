@@ -1,0 +1,67 @@
+/* @title orange point */
+* {
+  
+    [@sd > 100k] [@sd < 200k]{
+  
+    mark: symbol(circle);
+    mark-size: 5px;
+    :mark {
+        fill: red;
+        stroke: white;
+    	stroke-width: 1px;
+       };
+    font-family: 'Arial';
+    font-fill: white;
+  	label-anchor: 0.5 0.7;
+    halo-radius: 1.5;
+    halo-opacity: 0.7;
+    halo-color: black;
+
+      
+ 
+  };
+  
+  [@sd > 20k] [@sd < 100k]{
+  z-index: 1;
+  font-family: 'Arial';
+  font-fill: black;
+  label-anchor: 0.5 0.7;
+  halo-radius: 1.5;
+  halo-opacity: 0.7;
+  halo-color: white;
+    mark: symbol(circle);
+    mark-size: 8px;
+
+    :mark {
+        fill: red;
+        stroke: white;
+    	stroke-width: 1px;
+  };
+  };
+  
+  
+    [@sd < 20k]{
+  z-index: 1;
+  font-family: 'Arial';
+  font-fill: red;
+  label-anchor: 0.5 0.7;
+  halo-radius: 1.5;
+  halo-opacity: 0.7;
+  halo-color: white;
+  -gt-label-padding: 3;
+  -gt-label-auto-wrap: 80;
+  label-z-index: 9999;
+  label-priority: 9999;  
+  label: [NAVN];
+    mark: symbol(circle);
+    mark-size: 18px;
+
+    :mark {
+        fill: red;
+        stroke: white;
+    	stroke-width: 1px;
+  };
+  };
+  
+  
+}

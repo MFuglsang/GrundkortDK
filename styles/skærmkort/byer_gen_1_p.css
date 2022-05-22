@@ -1,0 +1,21 @@
+[@sd > 1.1M] {
+  
+        font-family: 'Arial';
+  font-fill: black;
+  label-anchor: 0.5 0.5;
+  halo-radius: 0;
+  halo-opacity: 0.7;
+  halo-color: black;
+  -gt-label-padding: 3;
+  -gt-label-auto-wrap: 80;
+  label: [NAVN];
+  font-size: 12;
+
+  [@scale > 2.1M] {
+    label: [NAVN];
+    font-size: 14;
+  };
+  
+  
+
+}

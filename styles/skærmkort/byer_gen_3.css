@@ -1,0 +1,5 @@
+[@sd < 500k][@sd > 200k] {
+  fill: #f4d6ab;
+  stroke: #edc58c;
+  stroke-width: 0.3;
+}

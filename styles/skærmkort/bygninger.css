@@ -1,0 +1,10 @@
+@mode 'Flat';
+
+[@sd < 30k] {
+  fill: #fdb28d;
+  stroke-width: 0.5;
+  [@sd < 15k] {
+    fill: #fdb28d;
+    stroke: #fdb28d;
+  };
+}

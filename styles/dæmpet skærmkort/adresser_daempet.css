@@ -1,0 +1,30 @@
+@mode 'Flat';
+
+[@sd < 6k] {
+  font-family: 'Arial';
+  font-fill: #535550;
+  font-size: 8;
+  halo-color: #ffffff;
+  halo-radius: 0;
+  halo-opacity: 0.6;
+  label: [type];
+  label-anchor: 0.5 0.5;
+  label-geometry: [centroid(geom)];
+  label-priority: 2000;
+  -gt-label-auto-wrap: 50;
+  label: [Husnummer];
+
+
+  [@sd < 3k] {
+    font-size: 12;
+    halo-radius: 0;
+    label: [Husnummer];
+
+  };
+  [@sd < 1k] {
+	label: [Husnummer];
+    halo-radius: 0;
+    font-size: 14;
+    -gt-label-auto-wrap: 40;
+  };
+}

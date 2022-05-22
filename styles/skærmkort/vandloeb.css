@@ -1,0 +1,13 @@
+@mode 'Flat';
+
+[@scale < 200k] {
+  stroke: #aad3df;
+  stroke-width: [interpolate(env('wms_scale_denominator', 3000000), 800000, 1.6, 3000000, 0.7)];
+      stroke-width: [categorize(@sd,
+      6, 10k,
+      4, 25k,
+      2, 50k,
+	  2, 100k,
+	  1, 200k,
+      1)];
+}

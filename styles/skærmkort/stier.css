@@ -1,0 +1,10 @@
+[@sd < 20k] {
+      stroke-dasharray: 4 0, 1 3;
+      stroke-opacity: 0.4, 1;
+      stroke-linecap: butt, round;
+      stroke-width: 
+      categorize(@sd,  2.8, 12.5k,  2.8), 
+      categorize(@sd,  1.2, 12.5k,  0.9);
+		stroke: #ffffff, #bbb;
+	
+  }
