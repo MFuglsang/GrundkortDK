@@ -1,0 +1,13 @@
+FROM Dataforsyningen :
+
+    1. LandPolygon - Download from ftps://ftp.dataforsyningen.dk/SDFE-LABS/LANDPOLYGONEN/
+
+FROM Datafordeleren :
+
+    1. GeoDanmark vector (Shape)
+    2. DAR adresser (Json)
+    3. Stednavne (Shape)
+    4. DAGI (Shape)
+    5. Matrikel (Geopackage)
+
+
